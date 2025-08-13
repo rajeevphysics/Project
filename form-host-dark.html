@@ -6,21 +6,15 @@
   <meta name="color-scheme" content="dark">
   <title>Subscribe (Dark)</title>
   <style>
-    /* No page chrome + transparent background */
     html, body { margin: 0; padding: 0; background: transparent; }
-
-    /* Center the provider iframe, no extra padding */
     .wrap { max-width: 980px; margin: 0 auto; padding: 0; }
-
-    /* Lock the provider iframe height so there’s no big blank area */
     iframe {
       display: block;
       width: 100%;
-      height: 460px !important;  /* adjust 440–500 if you want tighter/looser */
+      height: 430px !important;  /* ← keep this in sync with publish.css */
       border: none;
       border-radius: 10px;
       background: transparent;
-      overflow: hidden;
     }
   </style>
 </head>
@@ -28,10 +22,9 @@
   <div class="wrap">
     <iframe
       src="https://updates.cyberleadhub.com/widget/form/lbeDLm24VjuaFxhjccA1"
-      title="Subscribe (Dark)"
-      loading="eager"
-      style="height:460px;background:transparent"
-    ></iframe>
+      title="Newsletter (Dark)"
+      loading="lazy">
+    </iframe>
     <script src="https://updates.cyberleadhub.com/js/form_embed.js"></script>
   </div>
 </body>
