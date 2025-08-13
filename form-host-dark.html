@@ -3,29 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="color-scheme" content="dark light">
+  <meta name="color-scheme" content="dark">
   <title>Subscribe (Dark)</title>
   <style>
-    /* Remove default margins and make the iframe blend in */
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: transparent;   /* key: no slab behind the embed */
-    }
-    /* No extra gutters around the form */
-    .wrap {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 0;
-    }
-    /* One clear height; override any inline height */
+    /* No page chrome + transparent background */
+    html, body { margin: 0; padding: 0; background: transparent; }
+
+    /* Center the provider iframe, no extra padding */
+    .wrap { max-width: 980px; margin: 0 auto; padding: 0; }
+
+    /* Lock the provider iframe height so there’s no big blank area */
     iframe {
       display: block;
       width: 100%;
-     height: 460px !important; 
+      height: 460px !important;  /* adjust 440–500 if you want tighter/looser */
       border: none;
       border-radius: 10px;
       background: transparent;
+      overflow: hidden;
     }
   </style>
 </head>
@@ -33,10 +28,10 @@
   <div class="wrap">
     <iframe
       src="https://updates.cyberleadhub.com/widget/form/lbeDLm24VjuaFxhjccA1"
-      id="inline-lbeDLm24VjuaFxhjccA1"
-      title="Form (Dark)"
-      loading="lazy">
-    </iframe>
+      title="Subscribe (Dark)"
+      loading="eager"
+      style="height:460px;background:transparent"
+    ></iframe>
     <script src="https://updates.cyberleadhub.com/js/form_embed.js"></script>
   </div>
 </body>
